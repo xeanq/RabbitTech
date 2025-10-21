@@ -133,8 +133,7 @@
     line-height: 1;
 }
 
-.advantage-number2 { color: var(--text-blue); }
-.advantage-number3 { color: var(--text-white); }
+
 
 /* Fifth Block Styles */
 .fifth-advantage-item {
@@ -238,6 +237,15 @@
         margin-top: -500px;
         margin-left: 270px;
     }
+
+        .imga4 {
+            width: 120px;
+            margin-right: -100px;
+            margin-bottom: 10px;
+    }
+
+        .advantage-number2 { color: var(--text-blue); }
+    .advantage-number3 { color: var(--text-white); }
     
     .additional-text-1 { margin-left: 10px; }
     .missionfirstblock { margin-top: -150px; }
@@ -284,6 +292,9 @@
         font-size: 14px; 
         margin-top: -20px;
     }
+
+    .advantage-number2 { color: var(--text-blue); }
+    .advantage-number3 { color: var(--text-white); }
     
     .main-text,
     .main-text1 { 
@@ -328,4 +339,164 @@
     .fifth-advantage-item { padding: 10px; }
     .projects-section { padding: 40px 0; }
     .imga4 { margin-right: -140px !important; }
+}
+
+/* Mobile - 480px and below */
+@media (max-width: 480px) {
+    /* Typography */
+    .header-text { 
+        font-family: 'Manrope Bold', sans-serif;
+        font-size: 34px; 
+    }
+    
+    .header-text-2 { 
+        font-family: 'Manrope Bold', sans-serif;
+        font-size: 44px; 
+    }
+    
+    .additional-text { 
+        font-family: 'Open Sans Regular', sans-serif;
+        font-size: 12px; 
+    }
+
+    .additional-text-1 { 
+        font-family: 'Open Sans Regular', sans-serif;
+        font-size: 12px; 
+    }
+    
+    .title-text { 
+        font-family: 'Manrope Bold', sans-serif;
+        font-size: 14px; 
+        margin-top: -20px;
+    }
+
+    .advantage-number2 { color: var(--text-blue); }
+    .advantage-number3 { color: var(--text-white); }
+    
+    .main-text,
+    .main-text1 { 
+        font-family: 'Open Sans Regular', sans-serif;
+        font-size: 10px; 
+    }
+    
+    .main-text1 { margin-top: -40px; }
+    .advantage-number { font-size: 24px; }
+    .fifth-advantage-number { font-size: 14px; }
+    .additional-text-2 { 
+        font-family: 'Open Sans Regular', sans-serif;
+        font-size: 12px; 
+    }
+    .footer-title { font-size: 14px; }
+    .contacts-text { font-size: 10px; }
+
+    /* Layout */
+
+    .imga7 { width: 10px; }
+
+    .grid-cols-4 { 
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -50px;
+    }
+    .grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+
+
+    /* Images */
+    .img1 { display: none; }
+    .img360 { 
+        display: block !important; 
+        width: 60%; 
+        position: absolute;
+        margin-left: 80px !important;
+        margin-top: -25px !important;
+    }
+
+    /* Component Adjustments */
+    .advantage-item,
+    .fifth-advantage-item { padding: 10px; }
+    .projects-section { padding: 40px 0; }
+    .imga4 { margin-right: -140px !important; }
+}
+
+/* Mobile - 540px and below */
+@media (max-width: 540px) {
+    /* Typography */
+    .header-text { 
+        font-family: 'Manrope Bold', sans-serif;
+        font-size: 34px; 
+    }
+    
+    .header-text-2 { 
+        font-family: 'Manrope Bold', sans-serif;
+        font-size: 44px; 
+    }
+    
+    .additional-text { 
+        font-family: 'Open Sans Regular', sans-serif;
+        font-size: 12px; 
+    }
+
+    .additional-text-1 { 
+        font-family: 'Open Sans Regular', sans-serif;
+        font-size: 12px; 
+    }
+    
+    .title-text { 
+        font-family: 'Manrope Bold', sans-serif;
+        font-size: 14px; 
+        margin-top: -20px;
+    }
+
+    .advantage-number2 { color: var(--text-blue); }
+    .advantage-number3 { color: var(--text-white); }
+    
+    .main-text,
+    .main-text1 { 
+        font-family: 'Open Sans Regular', sans-serif;
+        font-size: 10px; 
+    }
+    
+    .main-text1 { margin-top: -40px; }
+    .advantage-number { font-size: 24px; }
+    .fifth-advantage-number { font-size: 14px; }
+    .additional-text-2 { 
+        font-family: 'Open Sans Regular', sans-serif;
+        font-size: 12px; 
+    }
+    .footer-title { font-size: 14px; }
+    .contacts-text { font-size: 10px; }
+
+    /* Layout */
+
+    .imga7 { width: 10px; }
+
+    .grid-cols-4 { 
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -50px;
+    }
+    .grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+
+
+    /* Images */
+    .img1 { display: none; }
+    .img360 { 
+        display: block !important; 
+        width: 60%; 
+        position: absolute;
+        margin-left: 80px !important;
+        margin-top: -40px !important;
+    }
+
+            .imga4 {
+            width: 80px;
+            margin-right: -90px;
+            margin-bottom: 5px;
+    }
+
+    /* Component Adjustments */
+    .advantage-item,
+    .fifth-advantage-item { padding: 10px; }
+    .projects-section { padding: 40px 0; }
+
 }
