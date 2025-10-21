@@ -530,8 +530,8 @@
 
 }
 
-/* Mobile - 390px and below */
-@media (max-width: 390px) {
+/* Mobile - 395px and below */
+@media (max-width: 395px) {
     /* Typography */
     .header-text { 
         font-family: 'Manrope Bold', sans-serif;
@@ -618,3 +618,4 @@
     .projects-section { padding: 40px 0; }
 
 }
+
