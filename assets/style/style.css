@@ -303,13 +303,14 @@
 
     /* Layout */
 
-
+    .imga7 { width: 10px; }
 
     .grid-cols-4 { 
         grid-template-columns: repeat(2, 1fr);
         margin-top: -50px;
     }
     .grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+
 
 
     /* Images */
