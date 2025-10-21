@@ -1,0 +1,330 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+    box-sizing: border-box;
+}
+
+/* ===== FONT DEFINITIONS ===== */
+@font-face {
+    font-family: 'Manrope Bold';
+    src: url('/assets/fonts/manrope-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('/assets/fonts/open-sans-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans SemiBold';
+    src: url('/assets/fonts/open-sans-semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('/assets/fonts/open-sans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ===== CSS VARIABLES ===== */
+:root {
+    --text-white: #FFFFFF;
+    --navigation-text-blue: #003CE5;
+    --text-blue: #015DD3;
+    --text-hover: #ACB2C5;
+    --shadow-color: #9d9d9d;
+}
+
+/* ===== LAYOUT & CONTAINER ===== */
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.relative { position: relative; }
+.absolute { position: absolute; }
+.transform { transform: translateX(-50%); }
+
+/* ===== COLOR UTILITIES ===== */
+.text-text-blue { color: var(--text-blue); }
+.text-text-blue1 { 
+    color: var(--text-blue); 
+    transition: color 0.3s ease;
+}
+.text-text-blue1:hover { color: var(--text-hover); }
+
+/* ===== TYPOGRAPHY STYLES ===== */
+
+/* Header Styles */
+.header-text {
+    font-family: 'Manrope Bold', sans-serif;
+    font-size: 120px;
+    line-height: 1.1;
+    text-shadow: var(--shadow-color) 0px 4px 4px;
+}
+
+.header-text-2 {
+    font-family: 'Manrope Bold', sans-serif;
+    font-size: 154px;
+    line-height: 1.1;
+}
+
+/* Additional Text Styles */
+.additional-text {
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.additional-text-1 {
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.additional-text-2 {
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* Title & Main Text Styles */
+.title-text {
+    font-family: 'Manrope Bold', sans-serif;
+    font-size: 48px;
+}
+
+.main-text,
+.main-text1 {
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Font Utility Classes */
+.font-opensans-bold {
+    font-family: 'Open Sans Bold', sans-serif;
+}
+
+/* ===== COMPONENT STYLES ===== */
+
+/* Advantages Section */
+.advantage-item {
+    position: relative;
+    padding: 20px;
+}
+
+.advantage-number {
+    font-family: 'Manrope Bold', sans-serif;
+    font-size: 64px;
+    color: var(--text-blue);
+    margin-bottom: 16px;
+    line-height: 1;
+}
+
+.advantage-number2 { color: var(--text-blue); }
+.advantage-number3 { color: var(--text-white); }
+
+/* Fifth Block Styles */
+.fifth-advantage-item {
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.fifth-advantage-number {
+    font-family: 'Manrope Bold', sans-serif;
+    font-size: 48px;
+    color: var(--text-blue);
+    margin-bottom: 16px;
+    line-height: 1;
+}
+
+/* Footer Styles */
+.footer-title {
+    font-family: 'Open Sans SemiBold', sans-serif;
+    font-size: 48px;
+}
+
+.contacts-text {
+    font-family: 'Open Sans Regular', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Image Styles */
+.img1 { 
+    z-index: 10; 
+}
+
+.img360 { 
+    display: none; 
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Desktop First Approach - 1280px and below */
+@media (max-width: 1280px) {
+    .header-text { font-size: 100px; }
+    .header-text-2 { font-size: 130px; }
+    .additional-text { font-size: 28px; }
+}
+
+/* Tablet - 768px and below */
+@media (max-width: 768px) {
+    /* Typography */
+    .header-text { 
+        font-family: 'Manrope Bold', sans-serif;
+        font-size: 71px; 
+    }
+    
+    .header-text-2 { 
+        font-family: 'Manrope Bold', sans-serif;
+        font-size: 92px; 
+    }
+    
+    .additional-text { 
+        font-family: 'Open Sans Regular', sans-serif;
+        font-size: 20px; 
+    }
+    
+    .title-text { 
+        font-family: 'Manrope Bold', sans-serif;
+        font-size: 30px; 
+    }
+    
+    .main-text { 
+        font-family: 'Open Sans Regular', sans-serif;
+        font-size: 16px; 
+    }
+    
+    .advantage-number { font-size: 48px; }
+    .fifth-advantage-number { font-size: 36px; }
+    .footer-title { font-size: 16px; }
+    .contacts-text { font-size: 12px; }
+
+    /* Layout */
+    .grid-cols-2,
+    .grid-cols-3,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .col-span-1,
+    .col-span-2 {
+        grid-column: 1 / -1;
+    }
+    
+    .grid-cols-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Component Adjustments */
+    .img1 {
+        width: 50%;
+        position: relative;
+        left: auto;
+        transform: none;
+        margin-top: -500px;
+        margin-left: 270px;
+    }
+    
+    .additional-text-1 { margin-left: 10px; }
+    .missionfirstblock { margin-top: -150px; }
+    .fifth-advantage-item { padding: 15px; }
+    .footer-col .imga7 { width: 200px; }
+    
+    /* Project specific */
+    .projects-text { order: 1; }
+    .projects-image { 
+        order: 2; 
+        text-align: center; 
+    }
+    
+    /* Positioning */
+    .absolute.left-8 { left: 1rem; }
+    .absolute.bottom-8 { bottom: 1rem; }
+}
+
+/* Mobile - 360px and below */
+@media (max-width: 360px) {
+    /* Typography */
+    .header-text { 
+        font-family: 'Manrope Bold', sans-serif;
+        font-size: 34px; 
+    }
+    
+    .header-text-2 { 
+        font-family: 'Manrope Bold', sans-serif;
+        font-size: 44px; 
+    }
+    
+    .additional-text { 
+        font-family: 'Open Sans Regular', sans-serif;
+        font-size: 12px; 
+    }
+
+    .additional-text-1 { 
+        font-family: 'Open Sans Regular', sans-serif;
+        font-size: 12px; 
+    }
+    
+    .title-text { 
+        font-family: 'Manrope Bold', sans-serif;
+        font-size: 14px; 
+        margin-top: -20px;
+    }
+    
+    .main-text,
+    .main-text1 { 
+        font-family: 'Open Sans Regular', sans-serif;
+        font-size: 10px; 
+    }
+    
+    .main-text1 { margin-top: -40px; }
+    .advantage-number { font-size: 24px; }
+    .fifth-advantage-number { font-size: 14px; }
+    .additional-text-2 { 
+        font-family: 'Open Sans Regular', sans-serif;
+        font-size: 12px; 
+    }
+    .footer-title { font-size: 14px; }
+    .contacts-text { font-size: 10px; }
+
+    /* Layout */
+
+
+
+    .grid-cols-4 { 
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -50px;
+    }
+    .grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+
+    /* Images */
+    .img1 { display: none; }
+    .img360 { 
+        display: block !important; 
+        width: 60%; 
+        position: absolute;
+        margin-left: 80px !important;
+        margin-top: -25px !important;
+    }
+
+    /* Component Adjustments */
+    .advantage-item,
+    .fifth-advantage-item { padding: 10px; }
+    .projects-section { padding: 40px 0; }
+    .imga4 { margin-right: -140px !important; }
+}
