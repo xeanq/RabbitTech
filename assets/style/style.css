@@ -52,7 +52,9 @@
     padding: 0 20px;
 }
 
-
+.container-1{
+    height: 550px;
+}
 
 .relative { position: relative; }
 .absolute { position: absolute; }
@@ -524,3 +526,4 @@
     .projects-section { padding: 40px 0; }
 
 }
+
