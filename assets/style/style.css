@@ -6,34 +6,30 @@
 /* ===== FONT DEFINITIONS ===== */
 @font-face {
     font-family: 'Manrope Bold';
-    src: url('/assets/fonts/manrope-bold.ttf') format('truetype');
-    font-weight: bold;
+    src: url('/assets/fonts/manrope-bold.ttf');
+    font-weight: 700;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
     font-family: 'Open Sans Bold';
-    src: url('/assets/fonts/open-sans-bold.ttf') format('truetype');
-    font-weight: bold;
+    src: url('/assets/fonts/open-sans-bold.ttf');
+    font-weight: 700;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
     font-family: 'Open Sans SemiBold';
-    src: url('/assets/fonts/open-sans-semibold.ttf') format('truetype');
+    src: url('/assets/fonts/open-sans-semibold.ttf');
     font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+    font-style: normal;;
 }
 
 @font-face {
     font-family: 'Open Sans Regular';
-    src: url('/assets/fonts/open-sans-regular.ttf') format('truetype');
-    font-weight: normal;
+    src: url('/assets/fonts/open-sans-regular.ttf');
+    font-weight: 400;
     font-style: normal;
-    font-display: swap;
 }
 
 /* ===== CSS VARIABLES ===== */
@@ -250,6 +246,10 @@
             width: 120px;
             margin-right: -100px;
             margin-bottom: 10px;
+    }
+
+    .foto3{
+        height: 300px;
     }
 
         .advantage-number2 { color: var(--text-blue); }
@@ -513,16 +513,21 @@
     .img1 { display: none; }
     .img360 { 
         display: block !important; 
-        width: 60% !important; 
+        width: 100% !important; 
         position: absolute !important;
         margin-left: 80px !important;
-        margin-top: -40px !important;
+        margin-top: -30px !important;
     }
 
             .imga4 {
             width: 80px;
             margin-right: -90px;
             margin-bottom: 5px;
+    }
+
+    .foto3{
+        margin-top: -50px;
+        height: 200px;
     }
 
     /* Component Adjustments */
