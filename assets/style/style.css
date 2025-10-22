@@ -331,7 +331,7 @@
     .grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
 
     .container-1{
-    height: 475px !important;
+    height: 475px ;
     }
 
     .container-2{
@@ -420,8 +420,10 @@
     }
 
     .container-2{
-    height: 370px;
+    height: 380px!;
     }
+
+
 
 
     /* Images */
@@ -504,7 +506,7 @@
     }
 
     .container-2{
-    height: 250px ;
+    height: 480px;
     }
 
     /* Images */
@@ -530,8 +532,8 @@
 
 }
 
-/* Mobile - 395px and below */
-@media (max-width: 395px) {
+/* Mobile - 390px and below */
+@media (max-width: 390px) {
     /* Typography */
     .header-text { 
         font-family: 'Manrope Bold', sans-serif;
@@ -618,4 +620,3 @@
     .projects-section { padding: 40px 0; }
 
 }
-
